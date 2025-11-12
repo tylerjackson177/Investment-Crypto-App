@@ -14,5 +14,5 @@ If you are developing a production application, we recommend using TypeScript wi
 ## To run Website
 
 Input in the terminal 
-
+   "touch .env"
 - "npm run dev"
