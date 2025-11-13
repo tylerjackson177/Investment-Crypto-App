@@ -51,6 +51,8 @@ export default function Xlist({
         data-chrome="noheader nofooter noborders transparent"
         data-tweet-limit="1"
         href={`https://twitter.com/i/lists/${listId}`}
+        target="_blank"
+       rel="noopener noreferrer"
       >
         Click to view latest news
       </a>
