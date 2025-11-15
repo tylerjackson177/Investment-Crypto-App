@@ -1,4 +1,5 @@
 import { useState } from "react";
+import FloatingNews from "./components/FloatingNews";
 import {
   AppBar,
   Toolbar,
@@ -94,13 +95,18 @@ function App() {
         />
 
         {/* Live quote card */}
-        <Box sx={{ mt: 3 }}>
-          {status === "error" ? (
-            <Typography color="error">Failed to load quote.</Typography>
-          ) : (
-            <QuotePanel q={quote} />
-          )}
-        </Box>
+        {/* Live quote + Floating News */}
+<Box sx={{ position: "relative", mt: 2 }}>
+  {status === "error" ? (
+    <Typography color="error">Failed to load quote.</Typography>
+  ) : (
+    <QuotePanel q={quote} />
+  )}
+
+  {/* Floating Louisiana News */}
+  <FloatingNews />
+</Box>
+
       </Box>
 
       {/* X News List (static embed) */}
